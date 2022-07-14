@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% include 'nav.html' %}
+
+  <h2>Sign up for a free account</h2>
+  <p class="lead">Select below the type of account you want to create</p>
+  <div>
+  <a href="{% url 'app:register_user' %}" style="margin-top: 1rem;" class="btn pink waves-effect waves-light" role="button">I'm a fundi</a>
+  <a href="{% url 'app:register_client' %}" style="margin-top: 1rem;" class="btn pink waves-effect waves-light" role="button">I'm a client</a>
+</div>
+{% endblock %}
